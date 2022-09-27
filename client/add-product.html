@@ -3,11 +3,133 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/product.css">
+    <title>Add Product</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a href="/">Shop</a></li>
+                <li class="main-header__item"><a class="active" href="/admin/add-product">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="product-form" action="/admin/add-product" method="POST">
+            <div class="form-control">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title">
+            </div>
+
+            <button type="submit">Add Product</button>
+        </form>
+    </main>
+</body>
+
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/client/main.css">
     <title>Document</title>
 </head>
+<style>
+ body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    }
+
+.main-header {
+    width: 100%;
+    height: 3.5rem;
+    background: blue;
+    padding: 0 1.5rem;
+        }
+
+.main-header__nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header__item-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header__item {
+    margin: 0 1rem;
+   padding: 0;
+}
+
+.main-header__item a{
+    color: #fff;
+    margin-right: 10px;
+}
+
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active{
+    color: #ceb423;
+}
+
+main{
+    padding: 10%;
+}
+
+.product__form{
+    width: 20rem;
+    max-width: 100%;
+    margin: auto;
+}
+
+.from__control{
+    margin: 1rem 0;
+}
+
+.from__control label,
+.from__control input{
+    display: block;
+    width: 100%;
+}
+
+.from__control input{
+    border: 1px solid #ceb423;
+    font: inherit;
+    border-radius: 3px;
+}
+
+button{
+    font: inherit;
+    border: 1px solid #ceb423;
+    border-radius: 3px;
+    background: #fff;
+    color: #ceb423;
+    cursor: pointer;
+}
+
+button:hover,
+button:active{
+    background: blue;
+    color: #fff;
+}
+</style>
 
 <body>
 
@@ -16,19 +138,19 @@
             <nav class="main-header__nav">
                 <ul class="main-header__item-list">
                     <li main-header__item> <a href="/">Shop</a></li>
-                    <li main-header__item class="active"> <a href="/add-product">add-product</a></li>
+                    <li main-header__item class="active"> <a href="/admin/add-product">add-product</a></li>
                 </ul>
             </nav>
         </header>
 
 
-        <form class="product__form" action="/add-product" method="post"></form>
+        <form class="product__form" action="/admin/add-product" method="post"></form>
         <div class="from__control">
             <label for="title">Title</label>
             <input type="text" name="title" id="title">
         </div>
-        <button type="submit">Add-Product</button>
+        <button type="submit" class="active">Add-Product</button>
     </body>
 </body>
 
-</html>
+</html> -->

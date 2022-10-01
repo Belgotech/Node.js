@@ -15,7 +15,8 @@
 }
 
 .form-control input {
-    border: 1px solid #dbc441;
+    border: 1px solid yellow;
+    /* border: 1px solid #dbc441; */
     font: inherit;
     border-radius: 2px;
 }

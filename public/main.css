@@ -11,7 +11,7 @@ main {
 .main-header {
     width: 100%;
     height: 3.5rem;
-    background-color: yellow;
+    background-color: #fbff00d5;
     /* background-color: #dbc441; */
     padding: 0 1.5rem;
 }

@@ -31,6 +31,14 @@ const secd2 = {
 }
 
 console.log(secd2);
+console.log(secd);
+
+const check = (...args)=>{
+  return args.filter(el => el ===2)
+  // return args.find(el => el ===2)
+}
+
+console.log(check(1, 2, 3));
 
 // module.exports = router;
 exports.routes = router

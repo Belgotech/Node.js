@@ -21,6 +21,17 @@ const new1 = [1, 2, 4]
 const new2 = [...new1, 3]
 console.log(new2);
 
+const secd = {
+  secd1 : 'add-product'
+}
+
+const secd2 = {
+  ...secd,
+  secd3 : 'add-product2'
+}
+
+console.log(secd2);
+
 // module.exports = router;
 exports.routes = router
 exports.products = products

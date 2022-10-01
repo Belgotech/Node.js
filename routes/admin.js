@@ -17,28 +17,38 @@ router.post('/add-product', (req, res, next) => {
   res.redirect('/');
 });
 
-const new1 = [1, 2, 4]
-const new2 = [...new1, 3]
-console.log(new2);
 
-const secd = {
-  secd1 : 'add-product'
-}
+//(below is the the next gen javaScript pratice)
+// const new1 = [1, 2, 4]
+// const new2 = [...new1, 3]
+// console.log(new2);
 
-const secd2 = {
-  ...secd,
-  secd3 : 'add-product2'
-}
+// const secd = {
+//   secd1 : 'add-product'
+// }
 
-console.log(secd2);
-console.log(secd);
+// const secd2 = {
+//   ...secd,
+//   secd3 : 'add-product2'
+// }
 
-const check = (...args)=>{
-  return args.filter(el => el ===2)
-  // return args.find(el => el ===2)
-}
+// console.log(secd2);
+// console.log(secd);
 
-console.log(check(1, 2, 3));
+// const check = (...args)=>{
+//   return args.filter(el => el ===2)
+//   // return args.find(el => el ===2)
+// }
+
+// console.log(check(1, 2, 3));
+
+// // const numbers = [1, 2, 3]
+// // [num1, num2] = numbers
+// // console.log(num1, num2);
+
+// // const num = 1
+// // const num2 = 2
+// // const num = num2
 
 // module.exports = router;
 exports.routes = router

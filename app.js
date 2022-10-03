@@ -4,6 +4,8 @@ const path = require("path")
 const rootDir = require("./util/util")
 
 const app = express();
+app.set("view engine", "pug")
+app.set("views", "views")
 
 const adminData = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
@@ -15,8 +17,8 @@ app.use("/admin", adminData.routes);
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
-  res.status(404).sendFile(path.join(rootDir, 'client', 'error.html'))
-  // res.status(404).sendFile(path.join(__dirname, './', 'client', 'error.html'))
+  res.status(404).sendFile(path.join(rootDir, 'views', 'error.html'))
+  // res.status(404).sendFile(path.join(__dirname, './', 'views', 'error.html'))
 });
 
 app.listen(3000);

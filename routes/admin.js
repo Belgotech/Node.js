@@ -7,8 +7,8 @@ const products = []
 
 // /admin/add-product => GET
 router.get('/add-product', (req, res, next) => {
-  res.sendFile(path.join(rootDir, 'client', 'add-product.html') )
-  // res.sendFile(path.join(__dirname, '../', 'client', 'add-product.html') )
+  res.sendFile(path.join(rootDir, 'views', 'add-product.html') )
+  // res.sendFile(path.join(__dirname, '../', 'views', 'add-product.html') )
   });
 
 // /admin/add-product => POST  
